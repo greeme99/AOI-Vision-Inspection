@@ -13,7 +13,8 @@ import {
   AlertCircle, 
   ExternalLink,
   Flame,
-  FileSpreadsheet
+  FileSpreadsheet,
+  FlaskConical
 } from "lucide-react";
 import { DefectRecord, ThemeStyles } from "../types";
 import { exportDefectDbJson } from "../utils/defectLearner";
@@ -24,6 +25,7 @@ interface DefectKnowledgeBaseModalProps {
   defectList: DefectRecord[];
   onDeleteDefect: (id: string) => void;
   onTriggerLearnAi: () => void;
+  onLoadScenarioSeed?: () => void;
   isLearning: boolean;
   theme: "dark" | "light";
   t: ThemeStyles;
@@ -35,6 +37,7 @@ export const DefectKnowledgeBaseModal: React.FC<DefectKnowledgeBaseModalProps> =
   defectList,
   onDeleteDefect,
   onTriggerLearnAi,
+  onLoadScenarioSeed,
   isLearning,
   theme,
   t,
@@ -102,6 +105,17 @@ export const DefectKnowledgeBaseModal: React.FC<DefectKnowledgeBaseModalProps> =
           </div>
 
           <div className="flex items-center gap-2">
+            {onLoadScenarioSeed && (
+              <button
+                onClick={onLoadScenarioSeed}
+                className="px-3 py-1.5 rounded-xl text-xs font-bold border border-cyan-500/40 bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500/20 flex items-center gap-1.5 transition cursor-pointer"
+                title="10건의 불량 지식 및 20건의 검사 이력 시나리오 데이터셋 로드"
+              >
+                <FlaskConical className="w-3.5 h-3.5" />
+                🧪 시나리오 테스트 데이터셋 로드
+              </button>
+            )}
+
             <button
               onClick={() => exportDefectDbJson(defectList)}
               className="px-3 py-1.5 rounded-xl text-xs font-bold border flex items-center gap-1.5 transition cursor-pointer hover:bg-slate-500/10"

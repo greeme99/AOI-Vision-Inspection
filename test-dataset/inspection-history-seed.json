@@ -1,0 +1,212 @@
+[
+  {
+    "id": "insp-001",
+    "time": "17:15:02",
+    "serial": "SN-2026-PCB-030",
+    "barcode": "AOI-PCB-M30",
+    "result": "NG",
+    "similarityCV": 91.2,
+    "similarityAI": 89.0,
+    "reason": "표면 스크래치 (Surface Scratch) 감지",
+    "defectLabels": ["표면 스크래치 (Surface Scratch)"]
+  },
+  {
+    "id": "insp-002",
+    "time": "17:14:20",
+    "serial": "SN-2026-PCB-029",
+    "barcode": "AOI-PCB-M29",
+    "result": "NG",
+    "similarityCV": 75.6,
+    "similarityAI": 72.3,
+    "reason": "납 브릿지 (Solder Bridge) 쇼트 감지",
+    "defectLabels": ["납 브릿지 (Solder Bridge)"]
+  },
+  {
+    "id": "insp-003",
+    "time": "17:10:45",
+    "serial": "SN-2026-PCB-028",
+    "barcode": "AOI-PCB-M28",
+    "result": "OK",
+    "similarityCV": 98.4,
+    "similarityAI": 97.9,
+    "reason": "전 부품 정상 실장 및 결함 없음"
+  },
+  {
+    "id": "insp-004",
+    "time": "16:45:10",
+    "serial": "SN-2026-PCB-027",
+    "barcode": "AOI-PCB-M27",
+    "result": "NG",
+    "similarityCV": 70.1,
+    "similarityAI": 67.4,
+    "reason": "부품 미삽 (Missing Component) 감지 (C1)",
+    "defectLabels": ["부품 미삽 (Missing Component)"]
+  },
+  {
+    "id": "insp-005",
+    "time": "16:40:02",
+    "serial": "SN-2026-PCB-026",
+    "barcode": "AOI-PCB-M26",
+    "result": "OK",
+    "similarityCV": 99.1,
+    "similarityAI": 98.5,
+    "reason": "모든 솔더링 및 실크스크린 정상"
+  },
+  {
+    "id": "insp-006",
+    "time": "16:32:19",
+    "serial": "SN-2026-PCB-025",
+    "barcode": "AOI-PCB-M25",
+    "result": "OK",
+    "similarityCV": 97.8,
+    "similarityAI": 96.9,
+    "reason": "정상 검사 완료"
+  },
+  {
+    "id": "insp-007",
+    "time": "15:30:18",
+    "serial": "SN-2026-PCB-024",
+    "barcode": "AOI-PCB-M24",
+    "result": "NG",
+    "similarityCV": 72.0,
+    "similarityAI": 69.8,
+    "reason": "납 브릿지 (Solder Bridge) 감지 (Pin 22-23)",
+    "defectLabels": ["납 브릿지 (Solder Bridge)"]
+  },
+  {
+    "id": "insp-008",
+    "time": "15:22:50",
+    "serial": "SN-2026-PCB-023",
+    "barcode": "AOI-PCB-M23",
+    "result": "OK",
+    "similarityCV": 98.9,
+    "similarityAI": 98.1,
+    "reason": "정상 판정"
+  },
+  {
+    "id": "insp-009",
+    "time": "15:10:04",
+    "serial": "SN-2026-PCB-022",
+    "barcode": "AOI-PCB-M22",
+    "result": "OK",
+    "similarityCV": 96.7,
+    "similarityAI": 95.8,
+    "reason": "정상 판정"
+  },
+  {
+    "id": "insp-010",
+    "time": "14:12:30",
+    "serial": "SN-2026-PCB-021",
+    "barcode": "AOI-PCB-M21",
+    "result": "NG",
+    "similarityCV": 89.2,
+    "similarityAI": 88.1,
+    "reason": "이물질 오염 (Contamination) 감지",
+    "defectLabels": ["이물질 오염 (Contamination)"]
+  },
+  {
+    "id": "insp-011",
+    "time": "14:02:15",
+    "serial": "SN-2026-PCB-020",
+    "barcode": "AOI-PCB-M20",
+    "result": "OK",
+    "similarityCV": 98.2,
+    "similarityAI": 97.4,
+    "reason": "정상 판정"
+  },
+  {
+    "id": "insp-012",
+    "time": "13:45:00",
+    "serial": "SN-2026-PCB-019",
+    "barcode": "AOI-PCB-M19",
+    "result": "OK",
+    "similarityCV": 99.4,
+    "similarityAI": 99.0,
+    "reason": "정상 판정"
+  },
+  {
+    "id": "insp-013",
+    "time": "13:05:49",
+    "serial": "SN-2026-PCB-018",
+    "barcode": "AOI-PCB-M18",
+    "result": "NG",
+    "similarityCV": 76.8,
+    "similarityAI": 73.5,
+    "reason": "하우징 크랙 (Crack) 감지",
+    "defectLabels": ["하우징 크랙 (Crack)"]
+  },
+  {
+    "id": "insp-014",
+    "time": "12:50:33",
+    "serial": "SN-2026-PCB-017",
+    "barcode": "AOI-PCB-M17",
+    "result": "OK",
+    "similarityCV": 97.9,
+    "similarityAI": 97.1,
+    "reason": "정상 판정"
+  },
+  {
+    "id": "insp-015",
+    "time": "12:10:14",
+    "serial": "SN-2026-PCB-016",
+    "barcode": "AOI-PCB-M16",
+    "result": "OK",
+    "similarityCV": 98.5,
+    "similarityAI": 98.0,
+    "reason": "정상 판정"
+  },
+  {
+    "id": "insp-016",
+    "time": "11:20:04",
+    "serial": "SN-2026-PCB-015",
+    "barcode": "AOI-PCB-M15",
+    "result": "NG",
+    "similarityCV": 87.4,
+    "similarityAI": 86.0,
+    "reason": "표면 스크래치 (Surface Scratch) 감지",
+    "defectLabels": ["표면 스크래치 (Surface Scratch)"]
+  },
+  {
+    "id": "insp-017",
+    "time": "10:48:35",
+    "serial": "SN-2026-PCB-012",
+    "barcode": "AOI-PCB-M12",
+    "result": "NG",
+    "similarityCV": 82.1,
+    "similarityAI": 80.0,
+    "reason": "부품 오삽/틀어짐 (Misaligned Part) 감지",
+    "defectLabels": ["부품 오삽/틀어짐 (Misaligned Part)"]
+  },
+  {
+    "id": "insp-018",
+    "time": "10:15:20",
+    "serial": "SN-2026-PCB-009",
+    "barcode": "AOI-PCB-M09",
+    "result": "OK",
+    "similarityCV": 99.0,
+    "similarityAI": 98.7,
+    "reason": "정상 판정"
+  },
+  {
+    "id": "insp-019",
+    "time": "10:02:11",
+    "serial": "SN-2026-PCB-007",
+    "barcode": "AOI-PCB-M07",
+    "result": "NG",
+    "similarityCV": 68.5,
+    "similarityAI": 65.2,
+    "reason": "부품 미삽 (Missing Component) 감지 (R1)",
+    "defectLabels": ["부품 미삽 (Missing Component)"]
+  },
+  {
+    "id": "insp-020",
+    "time": "09:15:22",
+    "serial": "SN-2026-PCB-004",
+    "barcode": "AOI-PCB-M04",
+    "result": "NG",
+    "similarityCV": 74.2,
+    "similarityAI": 71.0,
+    "reason": "납 브릿지 (Solder Bridge) 감지 (U1)",
+    "defectLabels": ["납 브릿지 (Solder Bridge)"]
+  }
+]

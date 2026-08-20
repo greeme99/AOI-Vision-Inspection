@@ -6,6 +6,7 @@ import { exportStandaloneHTML } from "./utils/standaloneExporter";
 import { detectBarcodeFromElement } from "./utils/barcodeScanner";
 import { buildEnhancedVlmPrompt } from "./utils/defectLearner";
 import { playOkSound, playNgSound, setSoundEnabled } from "./utils/audioAlert";
+import { SCENARIO_DEFECT_KNOWLEDGE_SEED, SCENARIO_INSPECTION_HISTORY_SEED } from "./data/testDataset";
 import { LeftPanel } from "./components/LeftPanel";
 import { CenterPanel } from "./components/CenterPanel";
 import { RightPanel } from "./components/RightPanel";
@@ -251,6 +252,19 @@ export default function App() {
       setVlmPrompt(enhanced.prompt);
       setIsAiLearning(false);
     }, 1200);
+  };
+
+  // 관통테스트 및 파레토 분석 검증용 시나리오 시드 데이터셋 1-클릭 로드
+  const handleLoadScenarioSeed = () => {
+    setDefectList(SCENARIO_DEFECT_KNOWLEDGE_SEED);
+    setHistoryList(SCENARIO_INSPECTION_HISTORY_SEED);
+    setStats({ total: 20, ok: 12, ng: 8 });
+    if (typeof window !== "undefined") {
+      localStorage.setItem("aoi_defect_db", JSON.stringify(SCENARIO_DEFECT_KNOWLEDGE_SEED));
+    }
+    const enhanced = buildEnhancedVlmPrompt(vlmPrompt, SCENARIO_DEFECT_KNOWLEDGE_SEED);
+    setVlmPrompt(enhanced.prompt);
+    playOkSound();
   };
 
   // --- 캔버스 및 미디어 참조 ---
@@ -1921,6 +1935,7 @@ export default function App() {
         defectList={defectList}
         onDeleteDefect={handleDeleteDefect}
         onTriggerLearnAi={handleTriggerLearnAi}
+        onLoadScenarioSeed={handleLoadScenarioSeed}
         isLearning={isAiLearning}
         theme={theme}
         t={t}

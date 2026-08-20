@@ -50,6 +50,11 @@
 ### 6. 📱 스마트폰 무선 브리지(Wireless Bridge Node)
 - 모바일 디바이스의 고화질 카메라를 무선 비전 노드로 연결하여 이동형 AOI 검사 환경 구성.
 
+### 7. 🧪 E2E 관통테스트 시나리오 및 참조 데이터셋 (`TEST_SCENARIO.md`)
+- 10개 핵심 기능(하드웨어, 비전, AI, 음향, 파레토, 능동학습) 전구간 관통테스트 매트릭스 수록.
+- 10종의 결함 지식 시드(`defect-knowledge-seed.json`) 및 20건의 검사 이력(`inspection-history-seed.json`) 제공.
+- 지식베이스 모달 내 **[🧪 시나리오 테스트 데이터셋 로드]** 1-클릭 검증 버튼 지원.
+
 ---
 
 ## 🛠️ 기술 스택 (Tech Stack)
@@ -64,7 +69,15 @@
 
 ## 📜 버전 및 배포 이력 (Changelog & Version History)
 
-### 📌 `v1.4.0` — 2026-08-20 (Current Release)
+### 📌 `v1.4.1` — 2026-08-20 (Current Release)
+- **앱 기능 관통테스트(E2E) 시나리오 명세서 (`TEST_SCENARIO.md`)** 공식 제정.
+- **시나리오 참조 데이터셋 구축**:
+  - `test-dataset/defect-knowledge-seed.json` (10건의 표준 결함 레코드)
+  - `test-dataset/inspection-history-seed.json` (20건의 검사 및 파레토 분석 데이터)
+  - `src/data/testDataset.ts` (골든 마스터 및 SVG 가상 결함 생성기)
+- **지식베이스 모달 UI 연동**: `[🧪 시나리오 테스트 데이터셋 로드]` 1-클릭 원스톱 검증 버튼 구현.
+
+### 📌 `v1.4.0` — 2026-08-20
 - **앱 명칭 변경 및 브랜드 일원화**: `Smart VLM-AOI Vision System` → `AOI-Vision Inspection` 으로 공식 명칭 확정.
 - **GitHub 저장소 리네이밍**: `greeme99/AX-AOI` → `greeme99/AOI-Vision-Inspection` 으로 변경 및 원격 URL 동기화.
 - **GitHub Pages 상용 배포 체계 구축**: `gh-pages` 브랜치 자동 빌드 및 상대 경로(`base: './'`) 최적화 적용.
