@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOI-Vision Inspection</title>
+    <!-- 고속 화상 처리 및 전처리용 OpenCV.js -->
+    <script src="https://docs.opencv.org/4.8.0/opencv.js" type="text/javascript"></script>
+    <!-- 경량 딥러닝 임베딩 연산용 TFJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <!-- 통계 리포팅용 SheetJS & Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  </head>
+  <body class="bg-[#0b0b10] text-[#e2e2ec] overflow-hidden antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,10 @@
+{
+  "name": "AOI-Vision Inspection",
+  "description": "OpenCV.js 및 Gemini VLM 기반의 고정밀 기구물 자동 광학 검사(AOI) 시스템",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
